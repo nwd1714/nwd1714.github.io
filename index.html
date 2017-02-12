@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nate DeNise</title>
+    <link href='https://fonts.googleapis.com/css?family=Audiowide|Monda' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="main.css">
+    <script>
+      // start google-analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-77413744-1', 'auto');
+      ga('send', 'pageview');
+      // end google-analytics
+    </script>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="jquery.mousewheel.js"></script>
+    <script>
+    $(function(){
+      $("#page-wrap").wrapInner("<table cellspacing='30'><tr>");
+      $(".post").wrap("<td></td>");
+      $("body").mousewheel(function(event, delta) {
+        this.scrollLeft -= (delta * 30);
+        event.preventDefault();
+      });   
+    });
+    </script>
+    <meta name="viewport" content="width=device-width">
+
+  </head>
+  <body>
+  <div class="page-wrap">
+    <div class="post">
+    <header id="top" class="main-header">
+      <div class = "fixed-header"> 
+        <h1 class = "logo"> Nate DeNise </h1>
+        <h3 class="main-heading hvr-buzz">ELECTRONICS</h3>
+      </div>
+      <!-- <h2 class = "main-heading hvr-buzz">developer | addicted to problem solving</h2> -->
+
+<!--         <div class = "arrowDiv"><a href = "#services">
+      <img class="arrow" src="images/arrow.svg" alt="Down arrow"></a>
+    </div> -->
+    </header>
+    </div>
+
+    
+		<div class="primary-content post" id = "services">
+			<!-- <p class="intro"></p> -->
+      <div>
+      <h1 class="progress hvr-wobble-vertical">Coming soon ...</h1>
+
+<!--       <p class = "services-tag"></p>
+        <div class = "item"> 
+          <a class = "item-link" href="#services">Custom web design</a>
+        </div>
+        <div class = "item">
+          <a class = "item-link" href="#services">Website Hosting and Maintenance</a>
+        </div>
+        <div class = "item">
+          <a class = "item-link" href="#services"> Mobile and Web App Development </a>
+        </div>
+        <div class = "item">
+          <a class = "link" href="#services">Consultation</a>
+        </div>
+        <div class = "item">
+          <a class = "link" href="#services">Data automation and analysis</a>
+        </div> -->
+      </div>
+      </div>
+
+<!-- End .primary-content -->
+
+		<div class="secondary-content post" id = "secondary-content">
+      <div class = "contact">
+        <h1> Contact </h1>
+        <h3> <a href="mailto:nathan@idealenigma.com">nathan@idealenigma.com</a></h3>
+      </div>
+		</div><!-- End .secondary-content -->
+    </div>
+		<footer class="main-footer">
+			<h2><a href=""> © Bekah DeVore | 2017</a></h2>
+			<h3><a href="#top" class = "backToTop">Back to top &raquo;</a></h3>
+		</footer>
+
+  </body>
+</html>
