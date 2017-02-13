@@ -16,7 +16,7 @@
     </script>
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="jquery.mousewheel.js"></script>
+    <!-- <script src="jquery.mousewheel.js"></script>
     <script>
     $(function(){
       $("#page-wrap").wrapInner("<table cellspacing='30'><tr>");
@@ -26,7 +26,7 @@
         event.preventDefault();
       });   
     });
-    </script>
+    </script> -->
     <meta name="viewport" content="width=device-width">
 
   </head>
@@ -49,7 +49,7 @@
     
 		<div class="primary-content post" id = "services">
 			<!-- <p class="intro"></p> -->
-      <div>
+      <div class = "servicesContent">
       <h1 class="progress hvr-wobble-vertical">Coming soon ...</h1>
 
 <!--       <p class = "services-tag"></p>
@@ -80,10 +80,55 @@
       </div>
 		</div><!-- End .secondary-content -->
     </div>
-		<footer class="main-footer">
-			<h2><a href=""> © Bekah DeVore | 2017</a></h2>
+		<footer class="main-footer test">
+      <div class = "footer-content">
+			<h2><a href=""> © Nate DeNise | 2017</a></h2>
 			<h3><a href="#top" class = "backToTop">Back to top &raquo;</a></h3>
+      </div>
 		</footer>
+    <script type="text/javascript">
+//       $(window).scroll(function() { // when the page is scrolled run this
+//         console.log($('.servicesContent').scrollTop());
+//     if($('.servicesContent').scrollTop() != 0) { // if you're NOT at the top
+//         $('.servicesContent').hide();
+//     } else { // else
+//         $('.servicesContent').show();
+//     }
+// });
+var distance = $('.primary-content').offset().top,
+    distanceWindow = $(window);
+
+var contact = $('.secondary-content').offset().top,
+    contactWindow = $(window);
+
+var footerVar = $('.main-footer').offset().top,
+    footerWindow = $(window); 
+
+
+
+$(window).scroll(function() {
+    if ( distanceWindow.scrollTop() >= distance ) {
+        // Your div has reached the top
+        $('.servicesContent').fadeIn();
+    } else {
+        $('.servicesContent').fadeOut();
+    }
+
+    if ( contactWindow.scrollTop() >= contact ) {
+        // Your div has reached the top
+        $('.contact').fadeIn();
+    } else {
+        $('.contact').fadeOut();
+    }
+
+    if ( footerWindow.scrollTop() >= distance + contact - 400) {
+        // Your div has reached the top
+        $('.footer-content').fadeIn();
+    } else {
+        $('.footer-content').fadeOut();
+    }
+});
+    </script>
 
   </body>
 </html>
