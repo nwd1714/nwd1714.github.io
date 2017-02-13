@@ -135,6 +135,7 @@ strike {
   color: var(--white);
   border-radius: 5px;
   z-index: 999;
+  text-shadow: 2px 2px 2px var(--redish);
   /*background: var(--redish);*/
   /*background: linear-gradient(black, white, transparent 95%);*/
   /*background-color: white;*/
